@@ -41,15 +41,15 @@ html {
  }
 
  .navlink:hover {
-   color: orange;
+   color: rgb(255, 119, 0);
  }
 
  .navbar .navlogo {
    text-decoration: none;
    color: black;
-   margin: 1vw auto -1vw 2vw;
+   margin: 2vw auto -1vw 2vw;
    width: auto;
-   height: 10vh;
+   height: 11vh;
  }
 
 #logo {
