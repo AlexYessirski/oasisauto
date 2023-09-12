@@ -8,6 +8,7 @@ html {
  }
 
  body {
+   width: 100%;
    padding: 0;
    margin: 0;
    border: 1px red;
@@ -61,4 +62,10 @@ html {
   .navbar .navlogo {
     margin-top: 9vw;
   }
+}
+
+.landing-image img {
+  width: 100%;
+  height: auto;
+  margin-top: -11vh;
 }
