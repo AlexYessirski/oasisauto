@@ -47,7 +47,7 @@ html {
  .navbar .navlogo {
    text-decoration: none;
    color: black;
-   margin: 2vw auto -1vw 2vw;
+   margin: 3vw auto -1vw 2vw;
    width: auto;
    height: 11vh;
  }
@@ -55,4 +55,10 @@ html {
 #logo {
    opacity: 100%;
    transition: 0.4s;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar .navlogo {
+    margin-top: 9vw;
+  }
 }
