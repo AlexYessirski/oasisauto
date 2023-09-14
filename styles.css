@@ -39,6 +39,7 @@ html {
    color: white;
    margin: 0 2vw;
    font-weight: bold;
+   font-size: 1.2rem;
    transition: color 0.3s;
  }
 
@@ -60,8 +61,26 @@ html {
 }
 
 @media only screen and (max-width: 800px) {
+  .navbar {
+    padding-left: 1vw;
+  }
   .navbar .navlogo {
-    margin: 16vh auto -1vw 2vw;
+    margin: 12vh auto -1vw 2vw;
+    width: auto;
+    height: 15vh;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .navbar {
+    padding-left: 1vw;
+  }
+  .navbar .navlink {
+    font-size: 1rem;
+  }
+
+  .navbar .navlogo {
+    margin: 12vh auto -1vw 2vw;
     width: auto;
     height: 15vh;
   }
