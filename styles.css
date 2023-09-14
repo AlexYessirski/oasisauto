@@ -227,6 +227,15 @@ html {
   object-fit: contain;
 }
 
+@media only screen and (max-width: 800px) {
+  #about {
+    flex-wrap: wrap;
+  }
+  .about-image, .about-text {
+    width: 100%;
+  }
+}
+
 .footer {
   color: white;
   background-color: black;
