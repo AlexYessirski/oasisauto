@@ -141,6 +141,7 @@ html {
   height: 50vh;
   margin: 0;
   background-color: red;
+  padding: 1vh 0;
 }
 
 .side-media-bar {
@@ -200,9 +201,9 @@ html {
   background-color: brown;
   text-align: left;
   width: 50%;
-  height: 100%;
   
   flex-grow: 1;
+  align-self: center;
   padding: 10vh 1vw;
   font-size: 1.2rem;
 }
@@ -239,8 +240,10 @@ html {
   justify-content: flex-start;
   gap: 10vw;
   flex-grow: 1;
+  bottom: 0;
 
-  height: 20%;
+  height: auto;
+
 }
 
 .footer-item {
@@ -249,5 +252,14 @@ html {
   background-color: gray;
   margin-top: 5vh;
 
-  width: 15%;
+  width: auto;
+}
+
+.footer-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-item ul li{
+  margin: 1vh 0;
 }
