@@ -155,4 +155,20 @@ html {
   width: 2.3vw;
 }
 
+@media only screen and (max-width: 800px) {
+  .side-media-bar{
+    padding: 2vh 1vw;
+  }
+  .media-icon img {
+    width: 7vw;
+  }
+}
 
+#about {
+  color: white;
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
