@@ -12,6 +12,7 @@ html {
    height: 100%;
    padding: 0;
    margin: 0;
+   background-color: black;
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  }
 
@@ -101,15 +102,17 @@ html {
 
 .landing-text {
   position: absolute;
-  color: white;
   text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  background-color: red;
 
-  font-size: 2rem;
+  color: white;
+  width: 100%;
+  height: auto;
+
+  font-size: 4rem;
 }
 
 .booking-button {
@@ -133,7 +136,7 @@ html {
 }
 
 .booking-button:hover {
-  background-color: rgb(255,77,0);
+  background-color: rgb(255,136,0);
 }
 
 .appointment-container {
@@ -259,10 +262,14 @@ html {
 .footer-item {
   color: white;
   text-align: left;
-  background-color: gray;
+  background-color: black;
   margin-top: 5vh;
 
   width: 100vw;
+}
+
+.footer-item h3 {
+  color: rgb(252,198,0);
 }
 
 .footer-item ul {
