@@ -186,6 +186,12 @@ html {
   margin-bottom: -6vh;
 }
 
+@media only screen and (max-width: 700px) {
+  .fade-bottom {
+    margin-bottom: -4vh;
+  }
+}
+
 .fade-top {
   height: 20%;
   background: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
