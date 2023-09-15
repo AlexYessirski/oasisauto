@@ -199,6 +199,12 @@ html {
   }
 }
 
+@media only screen and (min-width: 2250px) {
+  .fade-bottom {
+    bottom: -2%;
+  }
+}
+
 .fade-top {
   height: 20%;
   background: linear-gradient(to top, rgb(0, 0, 0, 0), rgb(0, 0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
