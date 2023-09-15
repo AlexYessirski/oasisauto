@@ -103,12 +103,11 @@ html {
 .landing-text {
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
   text-shadow: 0 8px 15px rgba(0, 0, 0, 0.579);
-
   color: white;
   height: auto;
 
