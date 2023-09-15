@@ -219,6 +219,11 @@ html {
 .media-icon img {
   display: block;
   width: 2.3vw;
+  transition: 0.4s;
+}
+
+.media-icon img:hover {
+  width: 2.5vw;
 }
 
 @media only screen and (max-width: 800px) {
