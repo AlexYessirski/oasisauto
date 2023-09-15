@@ -121,10 +121,6 @@ html {
     .landing-text {
       font-size: 2rem;
     }
-
-    .landing-image {
-      background-size: 100% 100% contain;
-    }
 }
 
 .landing-buttons {
