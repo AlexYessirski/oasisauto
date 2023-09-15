@@ -215,6 +215,7 @@ html {
 }
 
 .side-media-bar {
+  width: fit-content;
   height: auto;
 
   background-color: rgb(0, 0, 0, 0.2);
@@ -233,7 +234,7 @@ html {
   z-index: 99;
   position: fixed ;
   left: 0;
-  top: 50%;
+  top: 50vh;
   transform: translate(0, -50%);
 }
 
@@ -256,6 +257,10 @@ html {
     padding: 2vh 1vw;
   }
   .media-icon img {
+    width: 7vw;
+  }
+
+  .media-icon img:hover {
     width: 7vw;
   }
 }
