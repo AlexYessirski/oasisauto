@@ -121,6 +121,13 @@ html {
     .landing-text {
       font-size: 2rem;
     }
+
+    .landing-image {
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
 }
 
 .landing-buttons {
@@ -188,7 +195,7 @@ html {
 
 @media only screen and (max-width: 700px) {
   .fade-bottom {
-    margin-bottom: -4vh;
+    bottom: -11%;
   }
 }
 
