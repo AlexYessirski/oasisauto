@@ -338,6 +338,12 @@ html {
   margin-top: -5vh;
 }
 
+.service-slide img.premium-icon {
+  width: 50%;
+  margin-bottom: -4vh;
+  margin-top: -5vh;
+}
+
 .service-slide a {
   display: inline;
   position: relative;
