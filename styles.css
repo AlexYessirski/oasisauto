@@ -164,6 +164,11 @@ html {
   font-size: 4rem;
 }
 
+.landing-text h6 {
+  margin-top: 1vh;
+  text-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
 @media only screen and (max-width:700px){
     .landing-text {
       font-size: 2rem;
@@ -209,12 +214,14 @@ html {
 }
 
 .booking-button {
+  left: -1.6vw;
   background-color: rgb(252,76,2);
   color: white;
   -webkit-background-clip: padding-box;
 }
 
 .learn-button {
+  right: -1.6vw;
   background-color: rgb(0,195,230);
   -webkit-background-clip: padding-box;
 }
@@ -225,6 +232,7 @@ html {
 }
 
 .learn-button:hover {
+  color: black;
   background: linear-gradient(to bottom, rgb(253,231,0), rgb(254,182,0));
 }
 
@@ -271,9 +279,67 @@ html {
 .appointment-container {
   width: 100%;
   height: 50vh;
-  margin: 0;
+  margin: 11vh 0;
   background-color: black;
   padding: 1vh 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow-x: wrap;
+
+  gap: 2vw;
+}
+
+.appointment-container .service-slide {
+  width: 20vw;
+  height: 50vh;
+  background-color: white;
+  border-radius: 3vw;
+  text-align: center;
+}
+
+.service-slide ul{
+  list-style: none;
+  margin-left: -2vw;
+}
+
+.service-slide ul li {
+  margin: 1vh 0;
+}
+
+.service-slide h1 {
+  top: 0;
+}
+
+.service-slide h3 {
+  margin-top: 10%;
+  text-decoration: none;
+}
+
+.service-slide img {
+  width: 50%;
+  margin-bottom: -4vh;
+  margin-top: -5vh;
+}
+
+.service-slide a {
+  display: inline;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  top: 3vh;
+  padding: 1vw;
+  background-color: rgb(0,195,230);
+  border-radius: 2vw;
+  margin: 10px 0;
+
+}
+
+.service-slide h1, .service-slide h3, .service-slide a {
+  font-family: Commando;
 }
 
 .side-media-bar {
