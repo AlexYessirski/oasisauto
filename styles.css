@@ -328,6 +328,7 @@ html {
 
 .service-slide h3 {
   margin-top: 10%;
+  color: rgba(0, 0, 0, 0.25);
   text-decoration: none;
 }
 
@@ -348,6 +349,11 @@ html {
   border-radius: 2vw;
   margin: 10px 0;
 
+}
+
+.service-slide a:hover {
+  background: linear-gradient(to bottom, rgb(253,231,0), rgb(254,182,0));
+  color: black;
 }
 
 .service-slide h1, .service-slide h3, .service-slide a {
