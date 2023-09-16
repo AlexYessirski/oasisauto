@@ -209,8 +209,8 @@ html {
 }
 
 .booking-button {
-  background-color: rgb(253,231,0);
-  color: black;
+  background-color: rgb(252,76,2);
+  color: white;
   -webkit-background-clip: padding-box;
 }
 
@@ -244,6 +244,13 @@ html {
 @media only screen and (max-width: 700px) {
   .booking-button, .learn-button {
     bottom: 14vh;
+    border-radius: 10vw;
+    justify-content: center;
+    padding: 3.5vw 1vw;
+  }
+
+  .landing-buttons {
+    gap: 2vw;
   }
 }
 
@@ -289,8 +296,14 @@ html {
   z-index: 99;
   position: fixed ;
   left: 0;
-  top: 50vh;
+  top: 85vh;
   transform: translate(0, -50%);
+}
+
+@media only screen and (max-width: 700px) {
+    .side-media-bar {
+      top: 78vh;
+    }
 }
 
 .media-icon {
