@@ -313,6 +313,25 @@ html {
   text-align: center;
 }
 
+@media only screen and (max-width:700px) {
+
+  .appointment-container {
+    height: auto;
+    padding-top: 25vh;
+  }
+
+  .appointment-container .service-slide {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .appointment-container .service-slide ul {
+    margin: 5vh 0 0 0;
+    padding: 0;
+  }
+
+}
+
 .service-slide ul{
   list-style: none;
   margin-left: -2vw;
