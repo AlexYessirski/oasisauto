@@ -323,6 +323,7 @@ html {
   .appointment-container .service-slide {
     width: 50vw;
     height: 50vh;
+    margin: 3vh 0;
   }
 
   .appointment-container .service-slide ul {
