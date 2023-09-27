@@ -331,7 +331,6 @@ html {
     margin: 5vh 0 0 0;
     padding: 0;
   }
-
 }
 
 .service-slide ul{
@@ -385,6 +384,12 @@ html {
 
 .service-slide h1, .service-slide h3, .service-slide a {
   font-family: Commando;
+}
+
+@media only screen and (max-width:700px){
+    .service-slide a {
+      padding: 2vw;
+    }
 }
 
 .side-media-bar {
