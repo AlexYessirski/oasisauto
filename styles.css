@@ -173,7 +173,7 @@ html {
 
 @media only screen and (max-width:700px){
     .landing-text {
-      font-size: 2rem;
+      font-size: 4rem;
     }
 
     .landing-image {
@@ -261,6 +261,7 @@ html {
   }
 
   .landing-buttons {
+    margin-top: 30vh;
     gap: 2vw;
   }
 }
