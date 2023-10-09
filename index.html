@@ -19,8 +19,8 @@
             </a>
          </div>
          <div class="media-icon">
-            <a href="https://twitter.com" target="_blank" rel="norefferer">
-               <img src="./Twitter-X-White-Logo.png" alt="link to X (twitter)">
+            <a href="https://tiktok.com" target="_blank" rel="norefferer">
+               <img src="./TikTok-icon-white-symbol-glyph-png.png" alt="link to TikTok">
             </a>
          </div>
       </div>
@@ -94,6 +94,19 @@
             <a href="" class="service-button">Schedule</a>
          </div>
       </div>
+      <div id="contact" class="contact">
+         <div class="email-container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+               <h1>SCHEDULE YOUR APPOINTMENT TODAY</h1>
+               <input type="text" id="form-name" placeholder="Your Name" required>
+               <input type="email" id="form-email" placeholder="Your Email" required>
+               <input type="text" id="form-service" placeholder="Service Type" required>
+               <input type="text" id="form-phone" placeholder="Your Phone #" required>
+               <textarea id="form-message" rows="5" placeholder="Please put any extra details you would like us to know about here."></textarea>
+               <button type="submit">Send</button>
+            </form>
+         </div>
+      </div>
       <div id="about">
          <div class="about-text">
             <h2>ABOUT US</h2>
@@ -104,7 +117,6 @@
          </div>
       </div>
       <div id="FAQ">FAQ ANCHOR</div>
-      <div id="contact">CONTACT ANCHOR</div>
       <div id="footer">
          <div class="footer-item">
             <h3>CONTACT US</h3>
@@ -122,6 +134,7 @@
             </ul>
          </div>
       </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="./main.js"></script>
    </body>
 </html>

@@ -18,3 +18,23 @@ function navScroll() {
       document.getElementById("nav").style.opacity = "100%";
    }
 }
+
+//email function using SmtpJS.com library
+
+function sendEmail() {
+   Email.send({
+      Host : "smtp.elasticemail.com",
+      Username : "quintustemp@gmail.com",
+      Password : "2DB632A977502B7AB33805FE6A01810A1367",
+      To : 'quintustemp@gmail.com',
+      From : document.getElementById("form-email").value,
+      Subject : "OASIS AUTO APPOINTMENT: #" + Date.now() + Math.random(),
+      Body : "Name: " + document.getElementById("form-name").value
+             + "<br> Email: " + document.getElementById("form-email").value 
+             + "<br> Service: " + document.getElementById("form-service").value 
+             + "<br> Phone: " + document.getElementById("form-phone").value 
+             + "<br> Body: " + document.getElementById("form-message").value 
+  }).then(
+    message => alert("Message Sent!")
+  );
+}
