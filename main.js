@@ -48,7 +48,7 @@ function sendMail() {
    form_message: document.getElementById('form-message').value,
    };
 
-   const serviceID = "service_gs3sjsd";
+   const serviceID = "service_ifv0bql";
    const templateID = "email_form";
 
    emailjs.send(serviceID, templateID, params)
