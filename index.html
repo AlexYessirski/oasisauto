@@ -4,6 +4,12 @@
       <meta name="viewport" content="width=device-width , initial-scale=1.0">
       <link rel="stylesheet" href="./styles.css">
       <title>OASIS AUTO CARE</title>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"> </script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("yKFxtEcH4qpCUgpKY");
+   })();
+</script>
    </head>
    <body>
       <div id="top"></div>
@@ -96,7 +102,7 @@
       </div>
       <div id="contact" class="contact">
          <div class="email-container">
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form id="email-form" onsubmit="sendMail()">
                <h1>SCHEDULE YOUR APPOINTMENT TODAY</h1>
                <input type="text" id="form-name" placeholder="Your Name" required>
                <input type="email" id="form-email" placeholder="Your Email" required>
@@ -134,7 +140,6 @@
             </ul>
          </div>
       </div>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
       <script src="./main.js"></script>
    </body>
 </html>

@@ -19,22 +19,43 @@ function navScroll() {
    }
 }
 
-//email function using SmtpJS.com library
 
-function sendEmail() {
-   Email.send({
-      Host : "smtp.elasticemail.com",
-      Username : "quintustemp@gmail.com",
-      Password : "2DB632A977502B7AB33805FE6A01810A1367",
-      To : 'quintustemp@gmail.com',
-      From : document.getElementById("form-email").value,
-      Subject : "OASIS AUTO APPOINTMENT: #" + Date.now() + Math.random(),
-      Body : "Name: " + document.getElementById("form-name").value
-             + "<br> Email: " + document.getElementById("form-email").value 
-             + "<br> Service: " + document.getElementById("form-service").value 
-             + "<br> Phone: " + document.getElementById("form-phone").value 
-             + "<br> Body: " + document.getElementById("form-message").value 
-  }).then(
-    message => alert("Message Sent!")
-  );
+
+window.onload = function() {
+   document.getElementById('email-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+       // generate a five digit number for the contact_number variable
+       this.contact_number.value = Math.random() * 100000 | 0;
+       // these IDs from the previous steps
+       emailjs.sendForm("service_6o1c9mw", "email_form", this)
+           .then(function() {
+               console.log('SUCCESS!');
+           }, function(error) {
+               console.log('FAILED...', error);
+           });
+   });
+}
+
+
+
+function sendMail() {
+   var params = {
+      contact_number: Math.random() * 100000 | 0,
+   form_name: document.getElementById('form-name').value,
+   form_email: document.getElementById('form-email').value,
+   form_service: document.getElementById('form-service').value,
+   form_phone: document.getElementById('form-phone').value,
+   form_message: document.getElementById('form-message').value,
+   };
+
+   const serviceID = "service_gs3sjsd";
+   const templateID = "email_form";
+
+   emailjs.send(serviceID, templateID, params)
+   .then((res) => {
+      document.getElementById('email-form').reset()
+      console.log(res);
+      alert("Message Sent Sucessfully!")
+   })
+   .catch((err) => console.log(err));
 }
