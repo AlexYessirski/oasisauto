@@ -568,7 +568,7 @@ html {
 
 .email-container form {
   background-color: white;
-  width: 50vw;
+  width: 60vw;
   padding: 2vw 4vw;
   margin-bottom: 0;
 
@@ -598,7 +598,7 @@ html {
 }
 
 .email-container button {
-  width: 15vw;
+  width: 20vw;
   align-self: center;
   
   padding: 1rem;
@@ -616,4 +616,8 @@ html {
 
 .email-container button:hover {
   background: linear-gradient(to bottom, rgb(253,231,0), rgb(254,182,0));
+}
+
+#contact {
+  margin-bottom: 10vh;
 }
