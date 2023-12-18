@@ -324,15 +324,18 @@ html {
   }
 
   .appointment-container .service-slide {
-    width: 50vw;
-    height: 50vh;
-    margin: 3vh 0;
+    width: 75vw;
+    height: 40vh;
+    margin: 5vh 0;
+    padding-bottom: 60vh;
   }
 
   .appointment-container .service-slide ul {
     margin: 5vh 0 0 0;
     padding: 0;
+    font-size: 1rem;
   }
+
 }
 
 .service-slide ul{
@@ -681,14 +684,36 @@ html {
   justify-items: center;
   align-items: center;
 
+  gap: 5vh;
+
   list-style: none;
   text-align: center;
   color: black;
   width: 100%;
+
+  padding: 0;
+  margin: 0;
 }
 
 .membership-list li {
   width: 60%;
-  padding: 2vw 1vh;
+  padding: 5vh 1vh;
+  border-radius: 12px;
   background-color: white;
+}
+
+.about-title {
+  font-family: Commando;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: -1vh;
+}
+
+@media only screen and (max-width:700px) {
+  .member-title {
+    font-size: 2.8rem;
+  }
+
 }
