@@ -327,9 +327,8 @@ html {
     width: 75vw;
     height: 40vh;
     margin: 5vh 0;
-    padding-bottom: 60vh;
+    padding-bottom: 70vh;
   }
-
   .appointment-container .service-slide ul {
     margin: 5vh 0 0 0;
     padding: 0;
@@ -723,6 +722,34 @@ html {
 @media only screen and (max-width:700px) {
   .member-title {
     font-size: 2.8rem;
+  }
+
+}
+
+
+.package-chart {
+  width: 50vw;
+  height: 50vw;
+
+  margin-left: 25vw;
+  margin-top: 20vw;
+
+  display: block;
+  text-align: center;
+
+  border-radius: 3vw;
+  border: rgb(0,195,230) double 30px;
+}
+
+@media only screen and (max-width:700px) {
+  .package-chart {
+    width: 100vw;
+    height: 100vw;
+    display: inline-block;
+    margin-left: 1px;
+    margin-top: 30vh;
+    margin-bottom: -30vh;
+    border: rgb(0,195,230) double 15px;
   }
 
 }
